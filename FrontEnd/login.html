@@ -13,30 +13,31 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
-<body>
-    <header>
+<body class="login-body">
+    <header class="login-header">
         <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
         <nav>
             <ul>
-                <li>projets</li>
+                <li><a href="./index.html">projets</a></li>
                 <li>contact</li>
                 <li><a href="./login.html">login</a></li>
                 <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Log in</h2>
-        <form class="login-form" method="post" action="">
-            <label class="login-form__label" for="login-form__email">E-mail</label>
-            <input type="email" name="email" id="login-form__email" required>
-            <label class="login-form__label" for="login-form__password">Mot de passe</label>
-            <input type="password" name="password" id="login-form__password" required>
-            <input type="submit" id="login-form__submit" value="Se connecter">
-        </form>
-        <a href="#">Mot de passe oublié</a>
-        <div id="error-message"></div>
-        <div id="login-message"></div>
+    <main class="login-main">
+        <section id="login">
+            <h2>Log in</h2>
+            <form class="login-form" method="post" action="">
+                <label class="login-form__label" for="login-form__email">E-mail</label>
+                <input type="email" name="email" id="login-form__email" required>
+                <label class="login-form__label" for="login-form__password">Mot de passe</label>
+                <input type="password" name="password" id="login-form__password" required>
+                <input type="submit" id="login-form__submit" value="Se connecter">
+                <a id="forgotten-pw" href="#">Mot de passe oublié</a>
+                <div id="error-message"></div>
+            </form>
+        </section>
     </main>
     <footer>
         <nav>
